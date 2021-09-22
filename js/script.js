@@ -1,3 +1,7 @@
+let newsletter = document.getElementById('newsletter');
+let errors = document.getElementById('errors');
+
+
 const validate = (event) => {
     let name = document.getElementById('name');
     let email = document.getElementById('emial');
@@ -44,9 +48,6 @@ const zgody = (event) => {
     zgoda1.disabled = event.target.checked;
     zgoda2.disabled = event.target.checked;
 }
-
-let newsletter = document.getElementsByClassName('newsletter');
-let errors = document.getElementsByClassName('errors');
 
 newsletter.addEventListener('submit', validate);
 errors.addEventListener('change', zgody);
